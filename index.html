@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Webpage</title>
+    <style>
+        /* body */
+        body {
+    font-family: Arial, sans-serif;
+                }
+                /* Header */
+                header {
+                    background-color: #337ab7;
+                    padding: 10px 0;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center; }
+                /* logo h1 */
+                .logo h1 {
+                    color: white; /* Change the color of the company name */
+                    margin-left: 20px; /* Add some margin to the left */
+                }
+                /* nav ul */
+                nav ul {
+                    list-style: none;
+                    padding: 0;
+                    text-align: center;
+                }
+                /* nav ul li */
+                nav ul li {
+                    display: inline;
+                    margin: 0 15px;
+                }
+                /* nav ul li a */
+                nav ul li a {
+                    color: white;
+                    text-decoration: none;
+                    font-weight: bold;
+                }
+                /* nav ul li a:hover */
+                nav ul li a:hover {
+                    text-decoration: underline;
+                }
+                /* courses */
+                .courses {
+                    max-width: 800px;
+                    margin: 40px auto;
+                    padding: 20px;
+                    background-color: #f9f9f9;
+                    border: 1px solid #ddd;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                }
+                /* courese ul */
+                .courses ul {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                }
+                /* courses li */
+                .courses li {
+                    margin-bottom: 20px;
+                }
+                /* courese img */
+                .courses img {
+                    width: 100px;
+                    height: 100px;
+                    margin-right: 20px;
+                }
+                /* courses h3 */
+                .courses h3 {
+                    margin-top: 0;
+                }
+                /* courses a */
+                .courses a {
+                    text-decoration: none;
+
+                }
+                /* button1 */
+                .button1{
+                            background-color: red;
+                            color: yellow;
+                        }
+                        /* button 2 */
+                        .button2{
+                            background-color: green;
+                        }
+                        /* footer */
+                        footer {
+                            text-align: center;
+                            padding: 10px 0;
+                            background-color: #337ab7;
+                            color: white;
+                            position: relative;
+                            bottom: 0;
+                            width: 100%;
+                        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Div -->
+        <div class="logo">
+            <h1>Learn Right Now</h1> <!-- Add your company name here -->
+        </div>
+        <!-- Nav -->
+        <nav>
+            <!-- ul -->
+            <ul>
+                <!-- li -->
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="python.html">Python</a></li>
+                <li><a href="HTML Course.html">HTML</a></li>
+                <li><a href="css.html">CSS </a></li>
+                <li><a href="Javascript.html">JavaScript </a></li>
+                <li><a href="linux.html">Linux</a></li>
+                <li><a href="course.html">Course</a></li>
+                <!-- add other course link  -->
+                <li><button class="button1"><a href="Payment.html">Payment</a></button></li>
+                <li><button class="button2"><a href="login.html">Login</a></button></li>
+                <!-- /li -->
+            </ul>
+            <!-- /ul -->
+        </nav>
+        <!-- /nav -->
+    </header>
+    <!-- /header -->
+    <div class="courses">
+        <h2>Courses</h2>
+        <ul>
+            <!-- li 1 -->
+            <li>
+                <img src="python.jpg" alt="Python">
+                <h3>Python</h3>
+                <p>Learn the basics of Python programming</p>
+                <a href="Python.html">View Here</a>
+            </li>
+            <!-- li 2 -->
+            <li>
+                <img src="html.jpg" alt="HTML">
+                <h3>HTML</h3>
+                <p>Learn the basics of HTML markup language</p>
+                <a href="HTML Course.html">View Here</a>
+            </li>
+            <!-- li 3 -->
+            <li>
+                <img src="css.jpg" alt="CSS">
+                <h3>CSS</h3>
+                <p>Learn the basics of CSS styling</p>
+                <a href="css.html">View Here</a>
+            </li>
+            <!-- li 4 -->
+            <li>
+                <img src="js.jpg" alt="JavaScript">
+                <h3>JavaScript</h3>
+                <p>Learn the basics of JavaScript programming</p>
+                <a href="Javascript.html">View Here</a>
+            </li>
+            <!-- li 5 -->
+            <li>
+                <img src="linux.jpg" alt="Course 5">
+                <h3>linux</h3>
+                <p>Learn the basics of Course 5</p>
+                <a href="linux.html">View Here</a>
+            </li>
+            <!-- add other  -->
+        </ul>
+    </div>
+    <!-- /div -->
+     <!-- footer -->
+    <footer>
+        <p>&copy; 2024 All  Course   HTML ,CSS ,JavaScript,Python,Linux</p>
+    </footer>
+<!-- /footer -->
+</body>
+</html>
