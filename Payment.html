@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Course</title>
+    <style>
+        /* body */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+        }
+        /* header */
+        header {
+            background-color: #337ab7;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        /* logo h1 */
+        .logo h1 {
+            color: white;
+            margin-left: 20px;
+        }
+            /* nav ul */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+            /*nav ul li  */
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        /* nav ul li a */
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        /* nav ul li a:hover */
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+            /* main */
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        /* h1,h2 */
+        h1, h2 {
+            color: #337ab7;
+        }
+        /* h1 */
+        h1 {
+            margin-bottom: 20px;
+        }
+        /* h2 */
+        h2 {
+            margin-top: 20px;
+        }
+        /* p */
+        p {
+            margin-bottom: 15px;
+        }
+        /* ul,ol */
+        ul, ol {
+            margin-left: 20px;
+        }
+        /* footer */
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #337ab7;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+            /* pre */
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            overflow-x: auto;
+        }
+        /* code */
+        code {
+            font-family: monospace;
+        }
+        /* button1 */
+        .button1{
+            background-color: red;
+            color: yellow;
+        }
+        /* button2 */
+        .button2{
+            background-color: green;
+        }
+        .payment {
+            background-color: #f44336; /* Red */
+            color: white;
+        }
+        .payment-image {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .payment-image img {
+            max-width: 100%;
+            height: auto;
+        }
+        .payment-container {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: auto;
+        }
+        .form-1{
+            padding: 20px;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <!-- div -->
+        <div class="logo">
+            <h1>Learn Right Now</h1>
+        </div>
+        <!-- /div -->
+        <!-- nav -->
+        <nav>
+            <!-- ul -->
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Python.html">Python</a></li>
+                <li><a href="HTML Course.html">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+                <li><a href="Javascript.html">JavaScript</a></li>
+                <li><a href="linux.html">Linux</a></li>
+                <li><a href="course.html">Course</a></li>
+                <!-- add other nav bar -->
+                <li><button class="button1"><a href="payment.html">Payment</a></button></li>
+                <li><button class="button2"><a href="login.html">Login</a></button></li>
+            </ul>
+            <!-- /ul -->
+        </nav>
+        <!-- nav -->
+    </header>
+    <!-- /header -->
+     <!-- main -->
+     <div class="payment-container">
+        <div class="payment-image">
+            <img src="payment.jpg" alt="Payment Method">
+        </div>
+        <h2>Payment Details</h2>
+        <form class="form-1">
+        Name:
+            <input type="text" placeholder="Name" required><br>
+            Email:
+            <input type="email" placeholder="Email" required><br>
+        Password:
+            <input type="password" placeholder="Password" required><br>
+        Payment code
+        <input type="text" placeholder="payment code" required><br>
+            <button type="submit">Submit Payment</button>
+        </form>
+    </div>
+      </body>
+      </html>

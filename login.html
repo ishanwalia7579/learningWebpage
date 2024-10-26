@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image:linear-gradient(to left,white,rgb(75, 108, 131));
+            font-family: Arial, Helvetica, sans-serif;
+            background-repeat: no-repeat;
+            
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            /* margin-left: 15%; */
+            font-size: 40px;
+            background-size: cover;
+        }
+        input{
+            padding: 10px;
+            border-radius: 10px;
+            border: 2px solid blueviolet;
+        }
+        input[type="submit"]:hover{
+            background-color: aquamarine;
+            transform: scale(1.05);
+        }
+        .form1{
+            border: 2px solid ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding-top: 0px;
+            padding: 100px;
+            height: 50vh;
+            margin-right: 5%;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+        .images1{
+            height: 70vh;
+        }
+        .images{
+            background-image: url("payment.jpg");
+            height: 500px;
+            width: 500px;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="form1">
+   <form onsubmit="data()" action="Home.html">
+    UserID:<br>
+    <input type="text" id="n1"><br>
+    Mobile Number:<br>
+    <input type="number" id="n2"><br>
+    Password<br>
+    <input type="password" id="n3"><br>
+    Confirm Password:<br>
+    <input type="password" id="n4"><br>
+    <input type="submit" value="Submit Now">
+    </form>
+</div>
+<div class="images">
+    <!-- <img class="images1" src="https://wallpapers.com/images/hd/funny-garfield-coding-quote-6gppbj5wvt0k4yr4.jpg"> -->
+     
+</div>
+</div>
+<script>
+ function data() {
+            var a = document.getElementById("n1").value;
+            var b = document.getElementById("n2").value;
+            var c = document.getElementById("n3").value;
+            var d = document.getElementById("n4").value;
+            if (a=="" || b=="" || c=="" || d==""){
+                alert("All fields are mandatory");
+                return false;
+            }
+            else if (b.length<10||b.length>10){
+                alert("Number is less than 10 digits please enter a valid number")
+                return false;
+            }
+            else if(c!=d){
+                alert("Please Enter the same password s")
+            }
+            else{
+                 true;
+            }
+        }
+
+</script>
+</body>
+</html>
